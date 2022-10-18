@@ -1,0 +1,32 @@
+
+{# fichier templates/core/index.html.twig#}
+{# template de src/Controller/CoreController.php#}
+{# dc du chemin / #}
+
+{# heritage du template mere #}
+{% extends 'base.html.twig' %}
+
+{# redefinit° du block title du template mere #}
+{% block title %}
+	{# permet d'appeler le contenu du block title du template mère #}
+	Accueil | {{ parent() }}
+{% endblock %}
+
+{# redefinit° du block content defini ds le template mère #}
+{% block content %}
+	acceuil ou index ou homepage
+	<br>
+	1 Route: /
+	<br>
+	nom de la Route: homepage
+	<br>
+	controller: homepage()
+	<br>
+	chemin: localhost:8000
+	<br>
+	fichiers:
+	<br>
+	src/Controller/CoreController.php
+	<br>
+	templates/Core/index.html.twig
+{% endblock %}

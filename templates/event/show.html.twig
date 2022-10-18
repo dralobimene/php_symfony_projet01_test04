@@ -1,0 +1,22 @@
+
+{# fichier: templates/event/show.html.twig #}
+{# template de src/Controller/EventController.php #}
+{# controller: show($id) #}
+{# dc du chemin /events/1_Int_au_hasard #}
+
+{# heritage du bloc mere #}
+{% extends 'base.html.twig' %}
+
+{#redefinit° du bloc content du template mere #}
+{% block content %}
+	fichier template: templates/event/show.html.twig
+	<br>
+	fichier controller: src/Controller/EventController.php
+	<br>
+	controller: show($id)
+	<br>
+	<br>
+	Affichage de la valeur du parametre \$id:
+	<br>
+	{{ event_id }}
+{% endblock %}

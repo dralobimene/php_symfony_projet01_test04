@@ -1,0 +1,30 @@
+fichier src/Controller/CoreController.php
+=
+fichier de la homepage (index ou acceuil du site)
+class: CoreController
+
+nbre de Route: 1
+- chemin Route: /
+nom Route: homepage
+controller: methode homepage()
+
+created: src/Controller/CoreController.php
+created: templates/core/index.html.twig
+-------------------------------------------------
+
+fichier src/Controller/EventController.php
+=
+fichier de 
+class: EventController
+
+nbre de Routes: 2
+- chemin Route: /events/{id}
+nom Route: show_event
+controller: methode show($id)
+
+- chemin Route: /events/{category}
+nom Route: list_events
+controller: methode list($category = null)
+
+created: src/Controller/EventController.php
+created: templates/event/index.html.twig
